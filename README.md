@@ -1,5 +1,5 @@
 # Skipper
-Not much to describe gets your job done inefficiently
+Not much to describe gets your job done not efficiently
 
 
 
