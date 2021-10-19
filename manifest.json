@@ -1,6 +1,6 @@
 {
-  "name": "Yagami Light",
-  "description": "Simple Javascript plugin which replaces default weird accenture logo in the login screen into the one you like!",
+  "name": "Skipper",
+  "description": "Simple Javascript plugin",
   "version": "1.0",
   "manifest_version": 3,
   "content_scripts": [  {
@@ -8,7 +8,7 @@
       
       "https://www.oneplus.in/*",
       "https://storeapi.oneplus.in/",
-      "https://accenture.percipio.com/"
+      "https://accenture.percipio.com/*"
     ],
     "js": ["content.js"]
   }
@@ -32,7 +32,7 @@
 ],
 
 "permissions":[
-  "webRequest"
+  "storage"
 
 ]
 
