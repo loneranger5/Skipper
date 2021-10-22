@@ -6,8 +6,8 @@
         console.log("Storage has our thing lets grab it.");
 
 
-            
-    chrome.storage.sync.get(['gql'], function(result) {
+    //removing sync it makes the extension slow due to underlying chrome procedures and adding local version of it.
+    chrome.storage.local.get(['gql'], function(result) {
         let ourProgress = result
         //some how managed to share the objects..    
         //perform gql operation over here.
@@ -37,8 +37,8 @@
 
         //this is for reporting api..
 
-
-        chrome.storage.sync.get(['report'], function(result) {
+       // removing sync it makes the extension slow due to underlying chrome procedures and adding local version of it.
+        chrome.storage.local.get(['report'], function(result) {
             let ourProgress = result
             //some how managed to share the objects..    
             //perform report operation over here.
