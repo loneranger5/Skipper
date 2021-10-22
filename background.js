@@ -107,8 +107,8 @@ function recordHttp(){
                 let endPosReg = /\"endPos\":\"[0-9]*\"/
                 let sessionDurationReg = /\"sessionDurationSeconds\":[0-9]*/
                 mutationQuery = mutationQuery.replace(startReg, `"startPos":"0"`)
-                mutationQuery =  mutationQuery.replace(endPosReg, `"endPos":"700"`)
-                mutationQuery = mutationQuery.replace(sessionDurationReg, `"sessionDurationSeconds":700`)
+                mutationQuery =  mutationQuery.replace(endPosReg, `"endPos":"900"`)
+                mutationQuery = mutationQuery.replace(sessionDurationReg, `"sessionDurationSeconds":900`)
                 
                 console.log("gql AFTER :: ", mutationQuery)
                 progress.gql.gqlRequest = (mutationQuery)
