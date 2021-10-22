@@ -148,7 +148,9 @@ chrome.action.onClicked.addListener((tab) => {
     recordHttp()
     if(progress.gql.gqlRequest && progress.gql.gqlHeaders && progress.report.reportRequest && progress.report.reportHeaders)
         //json Stringify Corrupts the structure so we go the base64 scheme for maintaining the structure and decode it on the other side.
-        chrome.storage.sync.set(progress, function() {
+        
+        //removing sync it makes the extension slow due to underlying chrome procedures and adding local version of it.
+        chrome.storage.local.set(progress, function() {
         
         console.log('Value is set to ' + JSON.stringify(progress));
         });
